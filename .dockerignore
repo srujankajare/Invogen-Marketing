@@ -1,0 +1,33 @@
+# Dependencies & build artifacts
+node_modules
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# Next.js
+.next
+out
+
+# Git / IDE / env
+.git
+.gitignore
+.github
+.vscode
+.idea
+*.md
+AGENTS.md
+CLAUDE.md
+.env*
+.vercel
+*.pem
+.DS_Store
+
+# Docker (avoid recursive context noise)
+Dockerfile*
+docker-compose*.yml
+.dockerignore
+
+# Misc
+coverage
+scratch_*.txt
