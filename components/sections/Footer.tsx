@@ -39,7 +39,7 @@ const footerLinks = {
 
 const socialLinks = [
   { icon: InstagramIcon, href: "https://www.instagram.com/invogen.in?igsh=dzhzcHY1NDJ4Z3E2", label: "Instagram" },
-  { icon: YoutubeIcon, href: "#", label: "YouTube" },
+  { icon: YoutubeIcon, href: "https://youtube.com/@user-invogen?si=8YNeF_rBsoPdr51o", label: "YouTube" },
 ];
 
 export default function Footer() {
@@ -75,12 +75,13 @@ export default function Footer() {
               and get paid — all in one place.
             </p>
 
-            {/* Social links */}
             <div className="flex gap-2.5" role="list" aria-label="Social media links">
               {socialLinks.map((social) => (
                 <a
                   key={social.label}
                   href={social.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   aria-label={social.label}
                   role="listitem"
                   className="w-9 h-9 rounded-xl bg-white/5 border border-white/10 flex items-center justify-center text-gray-400 hover:text-white hover:border-[#ff7700]/70 hover:bg-[#ff7700]/15 hover:-translate-y-0.5 transition-all duration-200"
