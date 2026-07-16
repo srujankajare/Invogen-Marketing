@@ -1,0 +1,11 @@
+name: invogen-marketing
+
+services:
+  web:
+    build: .
+    image: invogen-marketing:latest
+    container_name: invogen-marketing
+    restart: unless-stopped
+    ports:
+      # Host nginx proxies invogen.in → this. Keep off 3000 (app).
+      - "127.0.0.1:3080:80"
