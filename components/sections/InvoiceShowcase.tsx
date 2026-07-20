@@ -5,7 +5,6 @@ import { motion } from "framer-motion";
 
 const featureList = [
   { title: "GST Ready Billing" },
-  { title: "Instant UPI QR Payments" },
   { title: "Automatic Tax Calculation" },
   { title: "Digital Signature Support" },
   { title: "Branded PDF Export" },
@@ -97,7 +96,7 @@ export default function InvoiceShowcase() {
 
             {/* Description */}
             <p className="text-base text-[#64748B] leading-relaxed max-w-[520px]">
-              Create beautiful GST-ready invoices with QR payments, digital signatures, automatic tax calculations, recurring billing, and professional branding—all from one simple invoice builder.
+              Create beautiful GST-ready invoices with digital signatures, automatic tax calculations, recurring billing, and professional branding—all from one simple invoice builder.
             </p>
 
             {/* Feature List (only bold text titles) */}
